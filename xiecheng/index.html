@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>携程网北京酒店预订 - 北京住宿区域选择与预订指南</title>
+<meta name="description" content="携程网北京酒店预订实用指南，介绍北京主要住宿区域、酒店类型、预订技巧、价格影响因素与常见问题，帮助出行者更高效地选择合适的北京酒店。">
+<meta name="keywords" content="携程网北京酒店预订,北京酒店,北京住宿,北京酒店预订,携程酒店">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --brand:#0a6cff;
+    --brand-dark:#0546b5;
+    --brand-soft:#eaf2ff;
+    --ink:#1c2330;
+    --ink-2:#4a5568;
+    --ink-3:#7a8699;
+    --line:#e3e8f0;
+    --bg:#f5f7fb;
+    --white:#ffffff;
+    --radius:14px;
+    --shadow:0 6px 24px rgba(16,42,89,.08);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  img{max-width:100%;display:block;}
+
+  /* ============ 顶部导航 ============ */
+  .site-header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:1180px;margin:0 auto;padding:0 20px;
+    height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+  }
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:19px;letter-spacing:.3px;}
+  .logo-mark{
+    width:34px;height:34px;border-radius:9px;
+    background:linear-gradient(135deg,#0a6cff,#3f9bff);
+    display:flex;align-items:center;justify-content:center;
+    color:#fff;font-size:17px;font-weight:800;
+  }
+  .logo span.sub{font-size:12px;color:var(--ink-3);font-weight:400;margin-left:2px;}
+  .main-nav{display:flex;gap:26px;font-size:15px;color:var(--ink-2);}
+  .main-nav a{padding:6px 0;border-bottom:2px solid transparent;transition:.2s;}
+  .main-nav a:hover{color:var(--brand);border-color:var(--brand);}
+  .header-cta{
+    background:var(--brand);color:#fff;font-size:14px;font-weight:600;
+    padding:9px 18px;border-radius:999px;white-space:nowrap;
+    transition:.2s;
+  }
+  .header-cta:hover{background:var(--brand-dark);}
+
+  /* ============ 首屏 ============ */
+  .hero{
+    background:
+      radial-gradient(900px 380px at 12% -10%,rgba(10,108,255,.16),transparent 60%),
+      radial-gradient(700px 320px at 92% 0%,rgba(63,155,255,.18),transparent 65%),
+      linear-gradient(180deg,#f2f7ff 0%,#f5f7fb 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{
+    max-width:1180px;margin:0 auto;padding:56px 20px 48px;
+    display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center;
+  }
+  .hero h1{
+    font-size:38px;line-height:1.25;letter-spacing:-.5px;margin-bottom:16px;font-weight:800;
+  }
+  .hero h1 em{font-style:normal;color:var(--brand);}
+  .hero-lead{font-size:16px;color:var(--ink-2);max-width:560px;margin-bottom:26px;}
+  .hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+  .hero-tags span{
+    background:#fff;border:1px solid var(--line);color:var(--ink-2);
+    font-size:13px;padding:6px 13px;border-radius:999px;
+  }
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;}
+  .btn-primary{
+    background:var(--brand);color:#fff;font-weight:600;font-size:15px;
+    padding:13px 28px;border-radius:10px;display:inline-block;
+    box-shadow:0 8px 20px rgba(10,108,255,.28);transition:.2s;
+  }
+  .btn-primary:hover{background:var(--brand-dark);transform:translateY(-1px);}
+  .btn-ghost{
+    border:1px solid #c9d6ea;background:#fff;color:var(--ink-2);
+    font-size:15px;padding:12px 24px;border-radius:10px;display:inline-block;transition:.2s;
+  }
+  .btn-ghost:hover{border-color:var(--brand);color:var(--brand);}
+
+  /* 首屏右侧速览卡 */
+  .quick-card{
+    background:#fff;border-radius:18px;padding:24px;box-shadow:var(--shadow);
+    border:1px solid var(--line);
+  }
+  .quick-card h2{font-size:16px;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+  .quick-card h2::before{content:"";width:4px;height:16px;background:var(--brand);border-radius:2px;}
+  .quick-list li{
+    display:flex;justify-content:space-between;gap:12px;
+    padding:11px 0;border-bottom:1px dashed var(--line);font-size:14px;
+  }
+  .quick-list li:last-child{border-bottom:none;}
+  .quick-list .k{color:var(--ink-2);}
+  .quick-list .v{color:var(--ink);font-weight:600;text-align:right;}
+  .quick-note{margin-top:14px;font-size:12.5px;color:var(--ink-3);line-height:1.6;}
+
+  /* ============ 通用区块 ============ */
+  .section{max-width:1180px;margin:0 auto;padding:56px 20px;}
+  .section-head{margin-bottom:30px;}
+  .section-head .eyebrow{
+    display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:1.2px;
+    color:var(--brand);background:var(--brand-soft);padding:4px 12px;border-radius:999px;margin-bottom:12px;
+  }
+  .section-head h2{font-size:26px;font-weight:800;letter-spacing:-.3px;margin-bottom:10px;}
+  .section-head p{color:var(--ink-2);font-size:15px;max-width:760px;}
+
+  /* ============ 区域网格 ============ */
+  .area-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .area-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px;transition:.22s;display:flex;flex-direction:column;gap:10px;
+  }
+  .area-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#c9dcff;}
+  .area-card .area-top{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+  .area-card h3{font-size:17px;font-weight:700;}
+  .area-card .badge{
+    font-size:12px;color:var(--brand);background:var(--brand-soft);
+    padding:3px 10px;border-radius:999px;white-space:nowrap;
+  }
+  .area-card p{font-size:14px;color:var(--ink-2);}
+  .area-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:6px;}
+  .area-meta span{font-size:12.5px;color:var(--ink-3);background:#f3f6fb;padding:4px 10px;border-radius:6px;}
+
+  /* ============ 类型对比表 ============ */
+  .table-wrap{overflow-x:auto;background:#fff;border:1px solid var(--line);border-radius:var(--radius);}
+  table{width:100%;border-collapse:collapse;min-width:680px;font-size:14px;}
+  thead th{
+    background:#f0f5ff;color:var(--ink);text-align:left;font-weight:700;
+    padding:14px 18px;border-bottom:1px solid var(--line);white-space:nowrap;
+  }
+  tbody td{padding:14px 18px;border-bottom:1px solid #eef2f8;color:var(--ink-2);vertical-align:top;}
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:hover{background:#fafcff;}
+  tbody td strong{color:var(--ink);}
+
+  /* ============ 预订步骤 ============ */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step;}
+  .step{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:22px 20px;position:relative;
+  }
+  .step::before{
+    counter-increment:step;content:counter(step,decimal-leading-zero);
+    font-size:13px;font-weight:800;color:var(--brand);
+    background:var(--brand-soft);display:inline-block;
+    padding:3px 10px;border-radius:6px;margin-bottom:12px;
+  }
+  .step h3{font-size:16px;margin-bottom:8px;}
+  .step p{font-size:13.5px;color:var(--ink-2);}
+
+  /* ============ 技巧 + 侧栏 ============ */
+  .split{display:grid;grid-template-columns:1.6fr 1fr;gap:26px;align-items:start;}
+  .tips-list{display:flex;flex-direction:column;gap:14px;}
+  .tip{
+    background:#fff;border:1px solid var(--line);border-left:4px solid var(--brand);
+    border-radius:10px;padding:18px 20px;
+  }
+  .tip h3{font-size:15.5px;margin-bottom:6px;}
+  .tip p{font-size:14px;color:var(--ink-2);}
+  .aside-card{
+    background:linear-gradient(160deg,#0a6cff,#2f8bff);
+    color:#fff;border-radius:var(--radius);padding:26px 24px;
+  }
+  .aside-card h3{font-size:18px;margin-bottom:12px;}
+  .aside-card p{font-size:14px;color:rgba(255,255,255,.9);margin-bottom:16px;}
+  .aside-card ul{display:flex;flex-direction:column;gap:10px;}
+  .aside-card li{
+    font-size:13.5px;color:rgba(255,255,255,.95);
+    padding-left:18px;position:relative;
+  }
+  .aside-card li::before{
+    content:"";position:absolute;left:0;top:9px;
+    width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.85);
+  }
+  .aside-note{
+    margin-top:18px;background:#fff;border:1px solid var(--line);
+    border-radius:var(--radius);padding:20px;
+  }
+  .aside-note h4{font-size:15px;margin-bottom:8px;}
+  .aside-note p{font-size:13.5px;color:var(--ink-2);}
+
+  /* ============ 价格因素 ============ */
+  .factor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .factor{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px;
+  }
+  .factor h3{font-size:15.5px;margin-bottom:8px;display:flex;align-items:center;gap:8px;}
+  .factor h3 i{
+    font-style:normal;width:26px;height:26px;border-radius:8px;flex:0 0 26px;
+    background:var(--brand-soft);color:var(--brand);font-size:13px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .factor p{font-size:13.5px;color:var(--ink-2);}
+
+  /* ============ FAQ ============ */
+  .faq{display:flex;flex-direction:column;gap:12px;}
+  .faq-item{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    font-family:inherit;font-size:15.5px;font-weight:600;color:var(--ink);
+    padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  .faq-q .icon{
+    flex:0 0 22px;width:22px;height:22px;border-radius:50%;
+    background:var(--brand-soft);color:var(--brand);
+    display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;
+    transition:transform .25s;
+  }
+  .faq-item.open .faq-q .icon{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0;overflow:hidden;transition:max-height .3s ease;
+  }
+  .faq-a p{padding:0 22px 20px;font-size:14px;color:var(--ink-2);}
+  .faq-item.open .faq-a{max-height:420px;}
+
+  /* ============ 页脚 ============ */
+  .site-footer{
+    background:#101a2b;color:#a9b6c9;margin-top:20px;
+  }
+  .footer-inner{
+    max-width:1180px;margin:0 auto;padding:46px 20px 26px;
+    display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;
+  }
+  .footer-brand{color:#fff;font-weight:700;font-size:17px;margin-bottom:12px;display:flex;align-items:center;gap:9px;}
+  .footer-brand .logo-mark{width:28px;height:28px;font-size:14px;border-radius:8px;}
+  .footer-col p{font-size:13.5px;line-height:1.8;color:#8e9cb1;}
+  .footer-col h4{color:#fff;font-size:14.5px;margin-bottom:14px;font-weight:600;}
+  .footer-col li{margin-bottom:9px;font-size:13.5px;}
+  .footer-col li a{color:#a9b6c9;transition:.2s;}
+  .footer-col li a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.08);
+    max-width:1180px;margin:0 auto;padding:18px 20px 30px;
+    font-size:12.5px;color:#7d8ba1;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  }
+
+  /* ============ 响应式 ============ */
+  @media (max-width:1000px){
+    .hero-inner{grid-template-columns:1fr;gap:34px;padding:44px 20px 40px;}
+    .hero h1{font-size:31px;}
+    .area-grid{grid-template-columns:repeat(2,1fr);}
+    .steps{grid-template-columns:repeat(2,1fr);}
+    .split{grid-template-columns:1fr;}
+    .factor-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-inner{grid-template-columns:1fr 1fr;gap:26px;}
+  }
+  @media (max-width:720px){
+    .main-nav{display:none;}
+    .header-inner{height:60px;}
+    .hero h1{font-size:26px;}
+    .hero-lead{font-size:15px;}
+    .section{padding:40px 18px;}
+    .section-head h2{font-size:21px;}
+    .area-grid{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr;}
+    .factor-grid{grid-template-columns:1fr;}
+    .footer-inner{grid-template-columns:1fr;gap:24px;}
+    .footer-bottom{flex-direction:column;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <div class="logo-mark">京</div>
+      <div>北京酒店预订指南<span class="sub">· 携程网</span></div>
+    </div>
+    <nav class="main-nav">
+      <a href="#areas">住宿区域</a>
+      <a href="#types">酒店类型</a>
+      <a href="#steps">预订流程</a>
+      <a href="#tips">实用技巧</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+    <a class="header-cta" href="#steps">开始规划</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ 首屏 ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>携程网北京酒店预订：<em>先选区域，再定酒店</em></h1>
+        <p class="hero-lead">
+          在北京订酒店，位置往往比星级更影响体验。围绕通勤距离、景点动线、交通换乘和预算区间，
+          本文梳理了北京主要住宿片区的特点、常见酒店类型与预订时容易忽略的细节，帮助你更高效地完成一次北京酒店预订。
+        </p>
+        <div class="hero-tags">
+          <span>三环内通勤便利</span>
+          <span>景点周边步行可达</span>
+          <span>交通枢纽中转方便</span>
+          <span>商务与亲子兼顾</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#areas">查看住宿区域对比</a>
+          <a class="btn-ghost" href="#tips">阅读预订技巧</a>
+        </div>
+      </div>
+
+      <aside class="quick-card">
+        <h2>预订前先想清楚这几件事</h2>
+        <ul class="quick-list">
+          <li><span class="k">出行目的</span><span class="v">旅游 / 商务 / 就医 / 中转</span></li>
+          <li><span class="k">主要活动范围</span><span class="v">决定住宿片区</span></li>
+          <li><span class="k">每天通勤时长</span><span class="v">建议控制在 40 分钟内</span></li>
+          <li><span class="k">同行人员</span><span class="v">影响房型与楼层选择</span></li>
+          <li><span class="k">入住与退房时间</span><span class="v">提前确认可否寄存行李</span></li>
+        </ul>
+        <p class="quick-note">
+          北京城市面积较大，不同城区之间通勤时间差异明显。先确定每天要往返的目的地，
+          再筛选酒店位置，通常比先看价格更省时间。
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 住宿区域 ============ -->
+  <section class="section" id="areas">
+    <div class="section-head">
+      <span class="eyebrow">住宿区域</span>
+      <h2>北京主要住宿片区怎么选</h2>
+      <p>不同片区对应不同的出行场景。下面的划分以常见旅行与商务动线为参考，具体酒店条件仍需以实际查询结果为准。</p>
+    </div>
+
+    <div class="area-grid">
+      <article class="area-card">
+        <div class="area-top">
+          <h3>王府井 · 东单</h3>
+          <span class="badge">首次来京</span>
+        </div>
+        <p>位于东城区核心位置，步行可达故宫、天安门方向的游览动线，周边商业与餐饮配套成熟，适合行程以经典景点为主的旅客。</p>
+        <div class="area-meta">
+          <span>景点集中</span><span>地铁换乘方便</span><span>餐饮丰富</span>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <div class="area-top">
+          <h3>前门 · 大栅栏</h3>
+          <span class="badge">老城体验</span>
+        </div>
+        <p>胡同肌理保留较完整，适合想感受老北京氛围的旅客。步行范围内有较多传统商业街，夜间人流相对集中。</p>
+        <div class="area-meta">
+          <span>胡同氛围</span><span>步行游览</span><span>特色住宿</span>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <div class="area-top">
+          <h3>国贸 · 建国门</h3>
+          <span class="badge">商务出差</span>
+        </div>
+        <p>写字楼与商务配套集中，适合以会议、拜访客户为主要目的的行程。地铁 1 号线与 10 号线交汇，向东西两侧通行都较顺畅。</p>
+        <div class="area-meta">
+          <span>商务配套</span><span>双线换乘</span><span>中高端集中</span>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <div class="area-top">
+          <h3>中关村 · 五道口</h3>
+          <span class="badge">高校科研</span>
+        </div>
+        <p>高校与科技企业密集，适合学术交流、校园访问或科技行业出差。周边餐饮以学生消费为主，价格相对友好。</p>
+        <div class="area-meta">
+          <span>高校周边</span><span>性价比高</span><span>生活便利</span>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <div class="area-top">
+          <h3>望京 · 酒仙桥</h3>
+          <span class="badge">东北方向</span>
+        </div>
+        <p>互联网与外资企业聚集，适合在东北部办公区活动的商务旅客。距离首都机场方向相对更近，适合行程前后衔接航班。</p>
+        <div class="area-meta">
+          <span>企业集中</span><span>近机场方向</span><span>商圈成熟</span>
+        </div>
+      </article>
+
+      <article class="area-card">
+        <div class="area-top">
+          <h3>西站 · 南站周边</h3>
+          <span class="badge">铁路中转</span>
+        </div>
+        <p>适合乘坐高铁当日到达或次日早班车出发的旅客。选择时需留意车站周边道路的通行状况，预留出站与进站的缓冲时间。</p>
+        <div class="area-meta">
+          <span>换乘便利</span><span>短住为主</span><span>注意路况</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 酒店类型 ============ -->
+  <section class="section" id="types">
+    <div class="section-head">
+      <span class="eyebrow">酒店类型</span>
+      <h2>不同类型住宿的适用场景</h2>
+      <p>北京住宿供给类型丰富，从连锁快捷到高端酒店、服务式公寓均有覆盖。下表按常见需求做了对比，便于快速定位方向。</p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>类型</th>
+            <th>常见特点</th>
+            <th>适合人群</th>
+            <th>选择时留意</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>经济连锁酒店</strong></td>
+            <td>房间面积相对紧凑，标准化程度高，门店分布广</td>
+            <td>预算有限、以睡觉休息为主的旅客</td>
+            <td>确认门店与地铁站的实际步行距离</td>
+          </tr>
+          <tr>
+            <td><strong>中端商务酒店</strong></td>
+            <td>房型选择较多，通常配有早餐与办公区域</td>
+            <td>商务出差、家庭出行</td>
+            <td>关注早餐时间是否与行程冲突</td>
+          </tr>
+          <tr>
+            <td><strong>高端及精品酒店</strong></td>
+            <td>服务与设施较完善，部分位于核心地段</td>
+            <td>对住宿体验要求较高的旅客</td>
+            <td>留意是否含早、是否有额外服务费</td>
+          </tr>
+          <tr>
+            <td><strong>服务式公寓</strong></td>
+            <td>带厨房与洗衣设施，适合多日停留</td>
+            <td>长住、带小孩或需要自己做饭的旅客</td>
+            <td>确认清洁频次与水电计费方式</td>
+          </tr>
+          <tr>
+            <td><strong>四合院与特色民宿</strong></td>
+            <td>建筑风格有特色，多分布在老城区</td>
+            <td>注重氛围体验的旅客</td>
+            <td>隔音、卫浴条件差异较大，需提前了解</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 预订流程 ============ -->
+  <section class="section" id="steps">
+    <div class="section-head">
+      <span class="eyebrow">预订流程</span>
+      <h2>一次完整的北京酒店预订分四步</h2>
+      <p>把决策拆成几个清晰步骤，能减少反复比价带来的时间消耗。</p>
+    </div>
+
+    <div class="steps">
+      <article class="step">
+        <h3>明确行程动线</h3>
+        <p>先列出每天要去的地点，找出出现频率最高的区域，把它作为住宿中心点。</p>
+      </article>
+      <article class="step">
+        <h3>筛选位置范围</h3>
+        <p>以中心点为圆心，按地铁站步行距离划定范围，优先选择换乘线路多的站点附近。</p>
+      </article>
+      <article class="step">
+        <h3>比对房型条件</h3>
+        <p>重点看床型、面积、窗户、早餐和取消政策，这些往往比星级更影响实际入住感受。</p>
+      </article>
+      <article class="step">
+        <h3>确认预订条款</h3>
+        <p>下单前确认入住时间、押金方式、发票开具和退改规则，避免行程变动时产生额外成本。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 技巧 + 侧栏 ============ -->
+  <section class="section" id="tips">
+    <div class="section-head">
+      <span class="eyebrow">实用技巧</span>
+      <h2>预订北京酒店时的经验参考</h2>
+      <p>以下内容来自常见的出行场景总结，具体政策与价格请以实际查询页面为准。</p>
+    </div>
+
+    <div class="split">
+      <div class="tips-list">
+        <article class="tip">
+          <h3>用地铁线路判断通勤效率</h3>
+          <p>北京早晚高峰地面交通耗时波动较大。选择靠近地铁站、且位于直达线路上的酒店，通常比单纯看直线距离更可靠。</p>
+        </article>
+        <article class="tip">
+          <h3>关注“步行距离”而非“附近”</h3>
+          <p>部分酒店描述中的“临近地铁”可能指 1 公里以上。预订前可结合地图测量实际步行路径，尤其要考虑是否需要过天桥或地下通道。</p>
+        </article>
+        <article class="tip">
+          <h3>留意房型的窗户与朝向</h3>
+          <p>老城区部分建筑受结构限制，存在无窗或内窗房型。对采光和通风有要求的旅客，建议在下单前与酒店确认。</p>
+        </article>
+        <article class="tip">
+          <h3>提前确认退改政策</h3>
+          <p>行程存在不确定因素时，优先选择支持免费取消的房型。部分低价房型退改限制较多，需要在下单前仔细阅读条款。</p>
+        </article>
+        <article class="tip">
+          <h3>旺季与大型活动期间尽早安排</h3>
+          <p>节假日、展会及考试期间，核心区域房源会明显紧张。确定行程后尽早预订，可选择的房型通常更多。</p>
+        </article>
+        <article class="tip">
+          <h3>带儿童或老人同行时多做确认</h3>
+          <p>可提前询问是否提供加床、婴儿床、无障碍通道等设施，并确认电梯情况，避免入住后临时调整。</p>
+        </article>
+      </div>
+
+      <aside>
+        <div class="aside-card">
+          <h3>下单前的核对清单</h3>
+          <p>花两分钟逐项确认，能减少大部分入住时的问题。</p>
+          <ul>
+            <li>入住与退房的具体时间</li>
+            <li>是否含早餐及用餐时段</li>
+            <li>房型面积与床型尺寸</li>
+            <li>是否有窗户及朝向</li>
+            <li>取消与修改规则</li>
+            <li>押金金额与退还方式</li>
+            <li>能否开具住宿发票</li>
+            <li>是否可寄存行李</li>
+          </ul>
+        </div>
+        <div class="aside-note">
+          <h4>关于价格波动</h4>
+          <p>酒店价格会随日期、房态和预订时间变化，同一家酒店在不同时段可能差异明显。建议确定行程后再比较，避免因短期波动频繁改单。</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 价格影响因素 ============ -->
+  <section class="section" id="price">
+    <div class="section-head">
+      <span class="eyebrow">价格因素</span>
+      <h2>影响北京酒店价格的主要变量</h2>
+      <p>理解价格构成，有助于判断某个报价是否合理，也能帮助你在预算内做出取舍。</p>
+    </div>
+
+    <div class="factor-grid">
+      <article class="factor">
+        <h3><i>01</i>地理位置</h3>
+        <p>距离核心商圈、景点和地铁换乘站越近，价格通常越高。适当向外移动一到两站，往往能在同等预算下获得更好的房间条件。</p>
+      </article>
+      <article class="factor">
+        <h3><i>02</i>出行时间</h3>
+        <p>节假日、寒暑假及大型会议期间需求集中，价格普遍上浮。工作日与周末之间也可能存在差异。</p>
+      </article>
+      <article class="factor">
+        <h3><i>03</i>房型与面积</h3>
+        <p>同一家酒店内，不同房型在面积、采光和楼层上差异明显，价格区间也相对宽。按实际需求选择即可，不必盲目追求高一级房型。</p>
+      </article>
+      <article class="factor">
+        <h3><i>04</i>配套与服务</h3>
+        <p>是否含早餐、是否配备健身房或洗衣设施、是否提供接送服务，都会反映在报价中。按需选择比全部都要更划算。</p>
+      </article>
+      <article class="factor">
+        <h3><i>05</i>预订时间</h3>
+        <p>过早或过晚都可能错过合适的价格区间。行程确定后即可关注，同时留意退改政策是否灵活。</p>
+      </article>
+      <article class="factor">
+        <h3><i>06</i>入住时长</h3>
+        <p>连续多晚入住时，部分酒店会提供连住优惠。长住旅客可对比服务式公寓与常规酒店的总体成本。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="section-head">
+      <span class="eyebrow">常见问题</span>
+      <h2>关于北京酒店预订的常见疑问</h2>
+      <p>整理了出行者较常提出的几个问题，供参考。</p>
+    </div>
+
+    <div class="faq">
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          第一次去北京，住在哪个区域比较合适？
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>如果行程以故宫、天安门、天坛等经典景点为主，东城区和西城区的地铁沿线通常较为方便。若以商务活动为主，则优先考虑办公地点附近的片区。核心思路是减少每天的通勤时间，而不是追求住在最中心的点位。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          酒店离地铁多远算合适？
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>一般情况下，步行 5 至 10 分钟可达地铁站比较理想。超过 15 分钟时，夏季和冬季的步行体验会明显下降。建议结合地图查看实际步行路线，注意是否需要穿越主干道或走地下通道。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          提前多久预订比较稳妥？
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>没有统一答案。普通工作日出行，提前一到两周通常有较充足的选择；遇到节假日或大型活动，建议更早关注。关键是行程确定后再下单，并优先选择退改灵活的房型。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          同一家酒店不同渠道价格不一样，怎么判断？
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>不同渠道的房型、含早情况和退改政策可能不同，单纯比较数字容易产生误解。建议把房型、是否含早、取消规则放在一起对比，综合判断实际成本。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          入住时需要准备哪些证件？
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>通常需要提供有效身份证件办理登记，具体要求以酒店告知为准。同行人员的信息一般也需一并登记，建议出行前确认所有入住人的证件是否齐全。</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          可以要求提前入住或延迟退房吗？
+          <span class="icon">+</span>
+        </button>
+        <div class="faq-a">
+          <p>能否提前入住或延迟退房取决于当日房态，建议提前与酒店沟通确认。若无法满足，可询问是否可以先行寄存行李，以便安排到达或离开当天的行程。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <div class="logo-mark">京</div>
+        北京酒店预订指南
+      </div>
+      <p>围绕携程网北京酒店预订场景，整理住宿区域、酒店类型、预订流程与注意事项，帮助出行者更清晰地做出选择。</p>
+    </div>
+    <div class="footer-col">
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#areas">住宿区域</a></li>
+        <li><a href="#types">酒店类型</a></li>
+        <li><a href="#steps">预订流程</a></li>
+        <li><a href="#price">价格因素</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>出行参考</h4>
+      <ul>
+        <li><a href="#tips">预订技巧</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#areas">交通换乘</a></li>
+        <li><a href="#types">房型选择</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>温馨提示</h4>
+      <ul>
+        <li>价格与房态以实际查询为准</li>
+        <li>下单前确认退改规则</li>
+        <li>留意入住与退房时间</li>
+        <li>提前确认发票开具方式</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>本页面为北京酒店预订信息整理，具体服务与条款以实际预订平台页面为准。</span>
+    <span>内容仅供参考</span>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var items = document.querySelectorAll('.faq-item');
+    items.forEach(function(item){
+      var btn = item.querySelector('.faq-q');
+      btn.addEventListener('click', function(){
+        var isOpen = item.classList.contains('open');
+        items.forEach(function(other){
+          other.classList.remove('open');
+        });
+        if(!isOpen){
+          item.classList.add('open');
+        }
+      });
+    });
+  })();
+</script>
+
+</body>
+  </html>
